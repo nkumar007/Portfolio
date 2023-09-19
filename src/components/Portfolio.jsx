@@ -3,35 +3,41 @@ import paytm from "../assets/portfolio/paytm_clone.png";
 import rode from "../assets/portfolio/RODE.png";
 import shopify from "../assets/portfolio/shopify_clone.png";
 import webcam from "../assets/portfolio/webcam_gallery.png";
+import {AiFillGithub, AiFillCode} from "react-icons/ai";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      name: "Gamebazaar",
       src: gamebazaar,
       demo: "https://games-ocean.netlify.app/",
       code: "https://github.com/nkumar007/games-arena",
     },
     {
       id: 2,
+      name: "Paytm Clone with Tailwind",
       src: paytm,
       demo: "https://paytm-home-tailwind.netlify.app/",
       code: "https://github.com/nkumar007/Paytm-home-clone",
     },
     {
       id: 3,
+      name: "RODE clone with Tailwind",
       src: rode,
       demo: "https://rode-home-clone.netlify.app/",
       code: "https://github.com/nkumar007/RODE-clone",
     },
     {
       id: 4,
+      name: "Spotify Clone with Tailwind",
       src: shopify,
       demo: "https://shopify-tailwindcss-clone.netlify.app/",
       code: "https://github.com/nkumar007/Shopify-home-clone",
     },
     {
       id: 5,
+      name: "Webcam with Vanilla JS",
       src: webcam,
       demo: " https://web-cam-gallery.netlify.app/",
       code: "https://github.com/nkumar007/Web_cam_gallery",
@@ -52,20 +58,27 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, demo, code }) => (
+          {portfolios.map(({id, src, demo, code, name}) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-center">
-                <button className=" w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  <a href={demo}>Demo</a>
-                </button>
-                <button className="px-6 py-3 w-1/2 m-4 duration-200 hover:scale-105">
-                  <a href={code}>Code</a>
-                </button>
+              <div className="text-center">
+                <p className="text-xl pt-3">{name}</p>
+                <div className="flex items-center justify-center">
+                  <button className=" px-4 py-3 m-4 duration-200 hover:scale-105">
+                    <a href={demo}>
+                      <AiFillCode className="text-3xl" />
+                    </a>
+                  </button>
+                  <button className="px-4 py-3  m-4 duration-200 hover:scale-105">
+                    <a href={code}>
+                      <AiFillGithub className="text-3xl" />
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
           ))}

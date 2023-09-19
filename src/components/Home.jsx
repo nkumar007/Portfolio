@@ -1,22 +1,21 @@
-import { HiArrowNarrowRight } from "react-icons/hi";
-import HeroImage from "../assets/profile_pic.jpg";
-import { Link } from "react-scroll";
+import {HiArrowNarrowRight} from "react-icons/hi";
+import HeroImage from "../assets/dev_pic.png";
+import {Link} from "react-scroll";
 
 const Home = () => {
   return (
     <div
       name="home"
-      className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-800"
+      className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-800 -mb-6 md:-mb-0"
     >
       <div className=" max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center h-full px-4">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I am a Full Stack Developer
+          <h2 className="text-3xl sm:text-7xl font-semibold text-white ">
+            Hello, I'm Naveen.
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I have 2 years of experience building and desgining software.
-            Currently, I love to work on web application using technologies like
-            React, Tailwind, Nodejs and Express.
+            A Fullstack Engineer who's skillset includes Javascript, ReactJS,
+            MERN stack, GIT, DOCKER and many more.
           </p>
           <div>
             <Link
@@ -36,7 +35,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full md:pl-3 "
+            className="rounded-2xl mx-auto w-full md:w-full md:pl-3 "
           />
         </div>
       </div>
