@@ -1,8 +1,9 @@
-import gamebazaar from "../assets/portfolio/gamebazaar.png";
+import gamebazaar from "../assets/demo_gamebazaar.mp4";
 import paytm from "../assets/portfolio/paytm_clone.png";
 import rode from "../assets/portfolio/RODE.png";
 import shopify from "../assets/portfolio/shopify_clone.png";
-import webcam from "../assets/portfolio/webcam_gallery.png";
+import webcam from "../assets/demo_webcam.mp4";
+import StreamGPT from "../assets/demo_streamgpt.mp4";
 import {AiFillGithub, AiFillCode} from "react-icons/ai";
 
 const Portfolio = () => {
@@ -16,27 +17,34 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      name: "StreamGPT",
+      src: StreamGPT,
+      demo: "https://stream-gpt.vercel.app/",
+      code: "https://github.com/nkumar007/stream_GPT",
+    },
+    {
+      id: 3,
       name: "Paytm Clone with Tailwind",
       src: paytm,
       demo: "https://paytm-home-tailwind.netlify.app/",
       code: "https://github.com/nkumar007/Paytm-home-clone",
     },
     {
-      id: 3,
+      id: 4,
       name: "RODE clone with Tailwind",
       src: rode,
       demo: "https://rode-home-clone.netlify.app/",
       code: "https://github.com/nkumar007/RODE-clone",
     },
     {
-      id: 4,
+      id: 5,
       name: "Spotify Clone with Tailwind",
       src: shopify,
       demo: "https://shopify-tailwindcss-clone.netlify.app/",
       code: "https://github.com/nkumar007/Shopify-home-clone",
     },
     {
-      id: 5,
+      id: 6,
       name: "Webcam with Vanilla JS",
       src: webcam,
       demo: " https://web-cam-gallery.netlify.app/",
@@ -60,11 +68,7 @@ const Portfolio = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({id, src, demo, code, name}) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
+              <video src={src} className="rounded-md" controls autoPlay />
               <div className="text-center">
                 <p className="text-xl pt-3">{name}</p>
                 <div className="flex items-center justify-center">
