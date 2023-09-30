@@ -1,9 +1,7 @@
 import gamebazaar from "../assets/demo_gamebazaar.mp4";
-import paytm from "../assets/portfolio/paytm_clone.png";
-import rode from "../assets/portfolio/RODE.png";
-import shopify from "../assets/portfolio/shopify_clone.png";
 import webcam from "../assets/demo_webcam.mp4";
 import StreamGPT from "../assets/demo_streamgpt.mp4";
+import sketchBoard from "../assets/demo_sketchboard.mp4";
 import {AiFillGithub, AiFillCode} from "react-icons/ai";
 
 const Portfolio = () => {
@@ -24,27 +22,14 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      name: "Paytm Clone with Tailwind",
-      src: paytm,
-      demo: "https://paytm-home-tailwind.netlify.app/",
-      code: "https://github.com/nkumar007/Paytm-home-clone",
+      name: "Sketch Board",
+      src: sketchBoard,
+      demo: "https://online-sketchbook.vercel.app/",
+      code: "https://github.com/nkumar007/Online-sketchbook",
     },
+
     {
       id: 4,
-      name: "RODE clone with Tailwind",
-      src: rode,
-      demo: "https://rode-home-clone.netlify.app/",
-      code: "https://github.com/nkumar007/RODE-clone",
-    },
-    {
-      id: 5,
-      name: "Spotify Clone with Tailwind",
-      src: shopify,
-      demo: "https://shopify-tailwindcss-clone.netlify.app/",
-      code: "https://github.com/nkumar007/Shopify-home-clone",
-    },
-    {
-      id: 6,
       name: "Webcam with Vanilla JS",
       src: webcam,
       demo: " https://web-cam-gallery.netlify.app/",
