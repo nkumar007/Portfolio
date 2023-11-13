@@ -1,29 +1,26 @@
-import gamebazaar from "../assets/demo_gamebazaar.mp4";
-import webcam from "../assets/demo_webcam.mp4";
-import StreamGPT from "../assets/demo_streamgpt.mp4";
-import sketchBoard from "../assets/demo_sketchboard.mp4";
 import {AiFillGithub, AiFillCode} from "react-icons/ai";
+import {Video} from "cloudinary-react";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
       name: "Gamebazaar",
-      src: gamebazaar,
+      videoId: "demo_streamgpt_isdkkx",
       demo: "https://games-ocean.netlify.app/",
       code: "https://github.com/nkumar007/games-arena",
     },
     {
       id: 2,
       name: "StreamGPT",
-      src: StreamGPT,
+      videoId: "demo_gamebazaar_ijrca7",
       demo: "https://stream-gpt.vercel.app/",
       code: "https://github.com/nkumar007/stream_GPT",
     },
     {
       id: 3,
       name: "Sketch Board",
-      src: sketchBoard,
+      videoId: "demo_webcam_bwsuax",
       demo: "https://online-sketchbook.vercel.app/",
       code: "https://github.com/nkumar007/Online-sketchbook",
     },
@@ -31,7 +28,7 @@ const Portfolio = () => {
     {
       id: 4,
       name: "Webcam with Vanilla JS",
-      src: webcam,
+      videoId: "demo_sketchboard_nhbc1x",
       demo: " https://web-cam-gallery.netlify.app/",
       code: "https://github.com/nkumar007/Web_cam_gallery",
     },
@@ -51,9 +48,16 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({id, src, demo, code, name}) => (
+          {portfolios.map(({id, videoId, demo, code, name}) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
-              <video src={src} className="rounded-md" controls autoPlay />
+              <Video
+                cloudName="da8yz6fvq"
+                publicId={videoId}
+                controls
+                autoplay
+                muted
+                loop
+              />
               <div className="text-center">
                 <p className="text-xl pt-3">{name}</p>
                 <div className="flex items-center justify-center">
