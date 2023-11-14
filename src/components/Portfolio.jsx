@@ -6,21 +6,21 @@ const Portfolio = () => {
     {
       id: 1,
       name: "Gamebazaar",
-      videoId: "demo_streamgpt_isdkkx",
+      videoId: "demo_gamebazaar_ijrca7",
       demo: "https://games-ocean.netlify.app/",
       code: "https://github.com/nkumar007/games-arena",
     },
     {
       id: 2,
       name: "StreamGPT",
-      videoId: "demo_gamebazaar_ijrca7",
+      videoId: "demo_streamgpt_isdkkx",
       demo: "https://stream-gpt.vercel.app/",
       code: "https://github.com/nkumar007/stream_GPT",
     },
     {
       id: 3,
       name: "Sketch Board",
-      videoId: "demo_webcam_bwsuax",
+      videoId: "demo_sketchboard_nhbc1x",
       demo: "https://online-sketchbook.vercel.app/",
       code: "https://github.com/nkumar007/Online-sketchbook",
     },
@@ -28,9 +28,16 @@ const Portfolio = () => {
     {
       id: 4,
       name: "Webcam with Vanilla JS",
-      videoId: "demo_sketchboard_nhbc1x",
+      videoId: "demo_webcam_bwsuax",
       demo: " https://web-cam-gallery.netlify.app/",
       code: "https://github.com/nkumar007/Web_cam_gallery",
+    },
+    {
+      id: 5,
+      name: "Issue Tracker",
+      videoId: "IssueTracker_sn92ja",
+      demo: "https://issue-tracker-one-green.vercel.app/",
+      code: "https://github.com/nkumar007/IssueTracker",
     },
   ];
 
